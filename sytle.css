@@ -1,14 +1,10 @@
+
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-
-nav {
-    justify-content: top;
-    min-width: 100vw;
 }
 
 body  {
@@ -16,22 +12,75 @@ body  {
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
 }
+
+nav {
+    justify-content: top;
+    min-width: 100vw;
+    padding: 10px;
+
+}
+
+.navbar-brand{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+}
+
 
 .container{
     background-color: aliceblue;
-    min-height: 80%;
-    min-width: 80%;
+    box-shadow: aliceblue 2%;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5%;
 }
 
 .feed{
     background-color: white;
     min-width: 75%;
     min-height: 80%;
-    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.feed__sub-tittle{
+    font-size: 1.6em;
+    padding: 5px;
+    grid-column: span 2;
+}
+
+.feed__image{
+    padding: 0.8em;
+    margin: 1rem;
+}
+
+p{
+    font-size: 0.8em;
+    grid-column: span 2;
+    padding: 5px;
+}
+
+footer{
+    width: 100vw;
+    position: absolute;
+    bottom: 5px;
+    padding: 0.5em;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(108, 92, 231, 0.5);
+    padding: 15px;
+
+}
+
+.p_footer{
+    color: aliceblue;
+    font-size: 0.8em;
+
 }
